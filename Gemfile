@@ -3,17 +3,17 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 
 gem 'simple_form'
-<<<<<<< HEAD
-group :development, :test do
-  gem 'sqlite3'
-end
-=======
 
 group :development, :test do
   gem 'sqlite3'
 end
 
->>>>>>> 96b1f28a6b2d521d8935092fedbe76dca9ee7420
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
+
 group :production do
   gem 'pg'
 end
