@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WebMenu</title>
+  <title>Provender</title>
   	<%= stylesheet_link_tag    "application", :media => "all" %>
   	<%= javascript_include_tag "application" %>
   	<%= csrf_meta_tags %>
@@ -13,10 +13,8 @@
 		
 		<div class="navbar navbar-inverse">
 		  <div class="navbar-inner">
-		    <a class="brand" href="#">Provender</a>
 		    <ul class="nav">
-		      <li><%= link_to "Home", menus_path %></li>
-		      <li><%= link_to "Menus", menus_path%></li>
+		      <li><%= link_to "Provender Menus", menus_path, class: 'brand' %></li>
 		      <li><%= link_to "Appetizers", menu_plates_path(menu_id = 1) %></li>
 		      <li><%= link_to "Main Dishes", menu_plates_path(menu_id = 2) %></li>
               <li><%= link_to "Desserts", menu_plates_path(menu_id = 3) %></li>

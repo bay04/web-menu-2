@@ -104,7 +104,8 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
 
 PLATFORMS
-  ruby-2.0.0
+  ruby
+  ruby-unknown
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
