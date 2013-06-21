@@ -1,0 +1,7 @@
+<h2>Listing All Farms With Provender </h2><br>
+
+<% for farm in @farms %>
+	<h3><%= link_to farm.name, farm_path(farm) %></h3>
+<% end %>
+
+<%=link_to 'New Farm', new_farm_path %>

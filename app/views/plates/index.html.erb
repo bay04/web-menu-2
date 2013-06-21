@@ -1,0 +1,27 @@
+<h2>Listing Plates</h2>
+
+
+<% for plate in @plates %>
+	
+	
+	<% plate.menu_id  =  :menu_id %>
+	
+	
+	
+	<h3><%= link_to plate.name, menu_plate_path(@menu, plate) %></h3>
+	<p><%= plate.description %></p>
+	<p>Ingredients: <%= plate.number_of_ingredients %></p>
+	<% if plate.contains_nuts %>
+			<p>Nuts: YES</p>
+		<% else %>
+			<p>Nuts: NO</p>
+		<% end %>	
+		
+<br />
+	
+
+	
+<% end %>
+
+
+<%= link_to "Add a new plate", new_menu_plate_path, class: 'btn btn-success' %>	

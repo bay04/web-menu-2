@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  number_of_plates: 1
+
+two:
+  name: MyString
+  description: MyText
+  number_of_plates: 1

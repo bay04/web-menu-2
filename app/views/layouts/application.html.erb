@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebMenu</title>
+  	<%= stylesheet_link_tag    "application", :media => "all" %>
+  	<%= javascript_include_tag "application" %>
+  	<%= csrf_meta_tags %>
+</head>
+<body>
+
+
+	<div class="container">
+		
+		<div class="navbar navbar-inverse">
+		  <div class="navbar-inner">
+		    <a class="brand" href="#">Provender</a>
+		    <ul class="nav">
+		      <li><%= link_to "Home", menus_path %></li>
+		      <li><%= link_to "Menus", menus_path%></li>
+		      <li><%= link_to "Appetizers", menu_plates_path(menu_id = 1) %></li>
+		      <li><%= link_to "Main Dishes", menu_plates_path(menu_id = 2) %></li>
+              <li><%= link_to "Desserts", menu_plates_path(menu_id = 3) %></li>
+		  </div>
+		</div>
+	
+	<%= yield %>
+
+
+	</div>
+
+
+</body>
+</html>
+

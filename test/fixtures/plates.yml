@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  descriptoin: MyText
+  contains_nuts: false
+  number_of_ingredients: 1
+
+two:
+  name: MyString
+  descriptoin: MyText
+  contains_nuts: false
+  number_of_ingredients: 1

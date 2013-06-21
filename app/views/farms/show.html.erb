@@ -1,0 +1,8 @@
+<h2>Showing <%= @farm.name %> Farm</h2
+	
+<p>	<%= @farm.crops.all %></p>
+<p>	
+	<%= link_to "Edit Farm", edit_farm_path(@farm) %> <br><br>
+	<%= link_to "Add crop", new_farm_crop_path(@farm)%>
+	
+</p>

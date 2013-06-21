@@ -1,0 +1,12 @@
+<h2 style="text-decoration: underline;"><%= @plate.name %></h2><br>
+<h4>Belongs to <%= @menu.name %></h2>
+
+	<p><%= @plate.description %></p>
+
+<% if @plate.contains_nuts == false %>
+	<p>This plate is free of Nuts.</p>
+<% else %>
+	<%= @plate.contains_nuts %>
+<% end%>
+
+	<%= link_to "Edit plate", edit_menu_plate_path(@menu, @plate), class: 'btn btn-success' %>

@@ -1,0 +1,14 @@
+<%= simple_form_for([@menu, @plate]) do |f| %>
+	
+	<%= f.input :name %>
+	<%= f.input :description %>
+	<%= f.input :contains_nuts%>
+	<%= f.input :number_of_ingredients %>
+	
+<p>Belongs to which<%= f.input :menu_id, :collection => Menu.all %></p>
+	
+	<%= f.button :submit, class: 'btn btn-success' %>
+	
+	
+
+	<% end %>

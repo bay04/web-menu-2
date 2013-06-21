@@ -1,0 +1,14 @@
+<%= simple_form_for([@farm, @crop]) do |f| %>
+	
+	
+	<%= f.input :name %>
+	
+	<%= f.input :farm_id, :collection => Farm.all %>
+	
+	
+
+	
+	<%= f.button :submit, class: 'btn btn-success' %>
+	
+	
+	<% end %>

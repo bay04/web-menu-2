@@ -1,0 +1,15 @@
+
+	<% if @menu.name.include?('menu') %>
+		<h2>Viewing <%= @menu.name %> Menu</h2>
+	<% else %>
+		<h2>Viewing <%= @menu.name %></h2>
+
+		<br>
+	<% end %>
+
+<h5><%= @menu.plates.count%> Plates for this menu</h5>
+
+<p><%= @menu.description %></p>
+
+<%= link_to "Edit Menu", edit_menu_path(@menu), class: 'btn btn-success'%>
+<%= link_to "Show Plates", menu_plates_path(@menu), class: 'btn btn-success'%>

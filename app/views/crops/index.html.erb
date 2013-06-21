@@ -1,0 +1,8 @@
+<h2>Listing All Crops For <%= @farm.name %></h2>
+
+<% for crop in @farm.crops %>
+
+	<% crop.farm_id = :farm_id %>
+	<p><strong><%= crop.name %></strong></p>
+
+<% end %>
