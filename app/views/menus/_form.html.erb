@@ -1,7 +1,18 @@
-<%= simple_form_for(@menu) do |f| %>
+<%= simple_form_for(@menu, :html => { :multipart => true }) do |f| %>
 
 	<%= f.input :name %>
 	<%= f.input :description %>	
+	<%= f.input :image %>
+	<%= f.input :delete_image %>
+	
+		
 	<%= f.button :submit, class: 'btn btn-success' %>
 	
+	<% end %>
+	
+	<% if :delete_image == 1 %>
+		<% @menu.image.destroy %>
+		<% @menu.save %>
+		<% else %>
+		
 	<% end %>

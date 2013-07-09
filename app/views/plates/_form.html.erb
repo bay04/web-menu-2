@@ -1,14 +1,30 @@
+<div class="large-12">
+
 <%= simple_form_for([@menu, @plate]) do |f| %>
 	
-	<%= f.input :name %>
-	<%= f.input :description %>
-	<%= f.input :contains_nuts%>
-	<%= f.input :number_of_ingredients %>
+
+
+	
+	<div class="small-block-grid-4">
+		<%= f.input :name %>
+	</div>
+	<div class="small-block-grid-4">
+		<%= f.input :description %>
+	</div>
+	<div class="small-block-grid-4">
+		<%= f.input :contains_nuts%>
+	</div>
+	
+	<div class="small-block-grid-4">
+		<%= f.input :number_of_ingredients %>
+	</div>
 	
 <p>Belongs to which<%= f.input :menu_id, :collection => Menu.all %></p>
 	
 	<%= f.button :submit, class: 'btn btn-success' %>
 	
-	
+
 
 	<% end %>
+	
+</div>

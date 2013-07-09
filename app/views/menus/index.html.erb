@@ -1,9 +1,18 @@
-<% for menu in @menus %>
 
-	<h2><%= link_to menu.name, menu_plates_path(menu) %></h2>
-		<p><%= menu.plates.count %> Plates are Available</p>
-		<p><%= menu.description%></p>
-		<p><%= link_to "Add a plate", new_menu_plate_path(menu)%></p>
+	<ul class="large-block-grid-2">
+<% for menu in @menus %>
+	
+
+
+		<li class="texty"><h2><%= link_to menu.name, menu_plates_path(menu) %></h2>
+		<%= image_tag menu.image.url(:medium) %></li>
+
+
+
 <% end %>
 
-<%= link_to "New Menu", new_menu_path, class: 'btn btn-success' %>
+
+
+	</ul>
+	
+	<%= link_to "New Menu", new_menu_path, class: 'btn btn-success' %>

@@ -9,22 +9,26 @@
 <body>
 
 
-	<div class="container">
+
+<div class="row">
+	
+	<div class=" contain-to-grid">
+		<nav class="top-bar">
+			<ul class="title-area">
+				<li class="name"><h1><%= link_to "Provender" , root_path %></h1></li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+		</nav>
 		
-		<div class="navbar navbar-inverse">
-		  <div class="navbar-inner">
-		    <ul class="nav">
-		      <li><%= link_to "Provender Menus", menus_path, class: 'brand' %></li>
-		      <li><%= link_to "Appetizers", menu_plates_path(menu_id = 1) %></li>
-		      <li><%= link_to "Main Dishes", menu_plates_path(menu_id = 2) %></li>
-              <li><%= link_to "Desserts", menu_plates_path(menu_id = 3) %></li>
-		  </div>
 		</div>
 	
+	
 	<%= yield %>
+	
+	
+</div>
 
-
-	</div>
+	
 
 
 </body>
